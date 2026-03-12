@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tiny Threads - Premium organic baby clothes. High-quality, comfortable, and beautifully designed clothing for infants and toddlers.">
+    <meta name="keywords" content="baby clothes, organic baby wear, infant clothing, toddler clothes, baby bodysuits, newborn essentials">
+    <meta name="author" content="Tiny Threads">
+    <title>Tiny Threads - Premium Baby Clothing | Organic & Comfortable</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23FF69B4'>👶</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">👶</span>
+                <span class="logo-text">Tiny Threads</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#products" class="nav-link">Shop</a>
+                <a href="#sizing" class="nav-link">Sizing Guide</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <div class="nav-right">
+                    <a href="#account" class="nav-link">Account</a>
+                    <button class="cart-btn" id="cartBtn">
+                        🛒 <span id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Organic Baby Clothes</h1>
+            <p class="tagline">Soft, comfortable, and beautifully designed clothing for your little ones</p>
+            <p class="subtitle">Made with organic cotton • Gentle on sensitive skin • Sustainably produced</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">👶 Beautiful Baby Moments</div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <span class="trust-icon">✨</span>
+                <h3>Organic & Safe</h3>
+                <p>100% organic cotton, free from harmful chemicals</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">🌍</span>
+                <h3>Sustainable</h3>
+                <p>Eco-friendly production and ethical manufacturing</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">🤗</span>
+                <h3>Comfort First</h3>
+                <p>Gentle on baby's delicate skin, tested for safety</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">⭐</span>
+                <h3>5,000+ Happy Parents</h3>
+                <p>Trusted by families worldwide • 4.9/5 star rating</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide -->
+    <section id="sizing" class="sizing-guide">
+        <h2>Age-Based Size Guide</h2>
+        <div class="sizing-table">
+            <div class="size-card">
+                <h3>Newborn</h3>
+                <p><strong>Age:</strong> 0-3 months</p>
+                <p><strong>Size:</strong> XS (0-3M)</p>
+                <p><strong>Weight:</strong> 5-12 lbs</p>
+                <p><strong>Length:</strong> 18-24 in</p>
+            </div>
+            <div class="size-card">
+                <h3>Infant</h3>
+                <p><strong>Age:</strong> 3-6 months</p>
+                <p><strong>Size:</strong> S (3-6M)</p>
+                <p><strong>Weight:</strong> 12-17 lbs</p>
+                <p><strong>Length:</strong> 24-27 in</p>
+            </div>
+            <div class="size-card">
+                <h3>Baby</h3>
+                <p><strong>Age:</strong> 6-12 months</p>
+                <p><strong>Size:</strong> M (6-12M)</p>
+                <p><strong>Weight:</strong> 17-23 lbs</p>
+                <p><strong>Length:</strong> 27-30 in</p>
+            </div>
+            <div class="size-card">
+                <h3>Toddler</h3>
+                <p><strong>Age:</strong> 12-24 months</p>
+                <p><strong>Size:</strong> L (12-24M)</p>
+                <p><strong>Weight:</strong> 23-30 lbs</p>
+                <p><strong>Length:</strong> 30-33 in</p>
+            </div>
+            <div class="size-card">
+                <h3>Young Toddler</h3>
+                <p><strong>Age:</strong> 2-3 years</p>
+                <p><strong>Size:</strong> XL (2-3Y)</p>
+                <p><strong>Weight:</strong> 28-38 lbs</p>
+                <p><strong>Length:</strong> 33-38 in</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>Shop Our Collection</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="bodysuits">Bodysuits</button>
+            <button class="filter-btn" data-filter="tops">Tops</button>
+            <button class="filter-btn" data-filter="pants">Pants</button>
+            <button class="filter-btn" data-filter="dresses">Dresses</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+            <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Tiny Threads</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Designed for Little Ones, Made with Love</h3>
+                <p>Tiny Threads was founded with a simple mission: to provide premium, organic baby clothing that's both beautiful and safe for your precious little ones.</p>
+                <p>Every piece in our collection is carefully curated and tested to ensure it meets the highest standards of comfort, safety, and sustainability. We believe babies deserve the best, and parents deserve peace of mind.</p>
+                <ul class="about-features">
+                    <li>✓ Certified organic cotton</li>
+                    <li>✓ OEKO-TEX certified</li>
+                    <li>✓ Hypoallergenic materials</li>
+                    <li>✓ Fair trade manufacturing</li>
+                    <li>✓ Free shipping on orders over $50</li>
+                    <li>✓ 30-day money-back guarantee</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder-large">👕 Quality Baby Wear</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What material are your clothes made from?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" style="display: none;">
+                    <p>All Tiny Threads products are made from 100% certified organic cotton. This ensures your baby's skin is safe from harmful pesticides and chemicals. Our cotton is also hypoallergenic and gentle on sensitive skin.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I choose the right size for my baby?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" style="display: none;">
+                    <p>We recommend sizing up to allow room for growth. Check our Age-Based Size Guide for recommended sizes by age and weight. Most parents find that sizing one size up gives their baby comfortable wear for 2-3 months.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's your return policy?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" style="display: none;">
+                    <p>We offer a 30-day money-back guarantee on all items. If you're not completely satisfied with your purchase, simply return it for a full refund. Free returns on orders over $50.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer international shipping?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" style="display: none;">
+                    <p>Yes! We ship to most countries worldwide. Shipping costs and times vary by location. Free shipping is available on orders over $75 to the US and Canada.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are your clothes machine washable?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" style="display: none;">
+                    <p>Yes, all our clothing is machine washable. We recommend washing in cold water and tumble drying on low heat. For best results, wash with mild detergent and avoid bleach.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you have a loyalty program?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" style="display: none;">
+                    <p>Yes! Our loyalty members receive exclusive discounts, early access to new collections, and special birthday offers. Join today in your account settings to start earning rewards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax:</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button class="continue-shopping" id="continueShopping">Continue Shopping</button>
+                <a href="#checkout" class="checkout-btn" id="checkoutBtn">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Page -->
+    <section id="checkout" class="checkout-section" style="display: none;">
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+            <div class="checkout-grid">
+                <div class="checkout-form">
+                    <form id="checkoutForm">
+                        <fieldset>
+                            <legend>Shipping Information</legend>
+                            <input type="text" placeholder="Full Name" required id="fullName">
+                            <input type="email" placeholder="Email Address" required id="email">
+                            <input type="text" placeholder="Street Address" required id="address">
+                            <div class="form-row">
+                                <input type="text" placeholder="City" required id="city">
+                                <input type="text" placeholder="State/Province" required id="state">
+                                <input type="text" placeholder="ZIP/Postal Code" required id="zip">
+                            </div>
+                            <select required id="country">
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="AU">Australia</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Payment Information</legend>
+                            <div id="card-element"></div>
+                            <div id="card-errors" role="alert"></div>
+                        </fieldset>
+                        <button type="submit" class="submit-order-btn">Complete Order</button>
+                    </form>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkoutItems"></div>
+                    <div class="checkout-total">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="checkoutSubtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span id="checkoutShipping">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax:</span>
+                            <span id="checkoutTax">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="checkoutTotal">$0.00</span>
+                        </div>
+                    </div>
+                    <button id="backToCart" class="back-btn">← Back to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Confirmation -->
+    <section id="confirmation" class="confirmation-section" style="display: none;">
+        <div class="confirmation-container">
+            <div class="confirmation-icon">✅</div>
+            <h2>Order Confirmed!</h2>
+            <p class="confirmation-message">Thank you for your order. We'll send you a confirmation email shortly.</p>
+            <div class="confirmation-details">
+                <p><strong>Order Number:</strong> <span id="orderNumber">TT-000000</span></p>
+                <p><strong>Email:</strong> <span id="confirmEmail">--</span></p>
+                <p><strong>Estimated Delivery:</strong> 5-7 business days</p>
+            </div>
+            <div class="confirmation-actions">
+                <a href="#products" class="continue-btn">Continue Shopping</a>
+                <a href="#account" class="account-btn">View My Orders</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Tiny Threads is dedicated to providing premium, organic baby clothing that's safe, sustainable, and beautiful.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#sizing">Sizing Guide</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="mailto:raphaelvannerom@gmail.com">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tiny Threads. All rights reserved. | Made with 💙 for babies and parents.</p>
+            <p>Contact: <a href="mailto:raphaelvannerom@gmail.com">raphaelvannerom@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
